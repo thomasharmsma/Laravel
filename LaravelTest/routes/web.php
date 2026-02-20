@@ -7,6 +7,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> 9d51093e14bf3d79f5f8fc1ba74da40386c7c163
 Route::get('/user', function () {
     return view('user');
 })->name('user');

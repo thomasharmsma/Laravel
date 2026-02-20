@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @extends('layout')
 
 
@@ -6,6 +7,8 @@
 
 include('partials.navbar')
 
+=======
+>>>>>>> f50c1e05ad0077d61bc4c8a5f9668a548c015c04
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>

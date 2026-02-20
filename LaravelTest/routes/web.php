@@ -7,8 +7,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/test', [PageController::class, 'index']);
-
 Route::get('/user', function () {
     return view('user');
 })->name('user');

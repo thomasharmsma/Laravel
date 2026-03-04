@@ -1,10 +1,8 @@
-@extends('layout')
+@include('navbar')
 
-
-@section('content')
-
-
-include('partials.navbar')
+<div>
+        @yield('content')
+    </div>
 
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">

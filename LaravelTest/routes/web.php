@@ -7,6 +7,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/welcome', function () {
+    return view('welcome');
+})->name('welcome');
+
+
 Route::get('/user', function () {
     return view('user');
 })->name('user');
@@ -20,9 +25,9 @@ Route::get('/test', function () {
 })->name('test');
 
 
-Route::get('/partials', function () {
-    return view('partials.navbar');
-})->name('partials.navbar');
+Route::get('/navbar', function () {
+    return view('navbar');
+})->name('navbar');
 
 
 

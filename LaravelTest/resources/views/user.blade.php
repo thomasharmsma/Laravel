@@ -1,11 +1,8 @@
-@extends('layout')
+@include('navbar')
 
-
-@section('content')
-
-
-include('partials.navbar')
-
+<div>
+        @yield('content')
+    </div>
 
 
 

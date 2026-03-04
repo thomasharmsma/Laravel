@@ -1,5 +1,9 @@
 
+@include('navbar')
 
+<div>
+        @yield('content')
+    </div>
 
 <h1>deze pagina is voor beheerders</h1>
 

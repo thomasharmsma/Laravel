@@ -13,8 +13,8 @@ class PageController extends Controller
     function admin(): View{
     }
 
-    function participants(): View{
-        participants = Participant::all();
+    function participants(): View {
+        $participants = Participant::all();
         return view('participants', ['participants' => $participants]);
     } 
     

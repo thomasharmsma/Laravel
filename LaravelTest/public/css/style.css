@@ -7,10 +7,12 @@ nav.navbar {
     background-color: #7593a1;
     padding:20px;
     border-radius: 10px;
-    
+
     display: flex;
     list-style: none;
 
+
+    
 }
 
 

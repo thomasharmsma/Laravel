@@ -1,12 +1,30 @@
 
-#button{
-    background-color: #0c4680;
-    font-family: Arial, sans-serif; 
+
+
+
+
+nav.navbar {
+    background-color: #7593a1;
+    padding:20px;
+    border-radius: 10px;
+    
+    display: flex;
+    list-style: none;
+
 }
 
-div {
-    background-color: #7ff409;
-    padding: 20px;
-    border-radius: 5px;
-    margin-bottom: 20px;
+
+
+li a {
+    text-decoration: none;
+    font-family: Arial, sans-serif; 
+    padding:20px 15px;
+    border-radius: 15x;
+    margin-left: 10px
+    ;
 }
+
+
+
+ 
+

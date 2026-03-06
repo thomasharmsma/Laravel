@@ -1,8 +1,12 @@
 @include('navbar')
 
 <div>
-        @yield('content')
-    </div>
+    @yield('content')
+
+</div>
+
+
+
 
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
@@ -41,7 +45,10 @@
         </button>
 
 
-
+<form action="verwerk.php" method="post">
+<input type="text" name="naam" placeholder="YJV" required>
+<textarea name="bericht" placeholder="Hallo" required></textarea>
+<button type="submit">Verstuur</button></form>
 
 
 

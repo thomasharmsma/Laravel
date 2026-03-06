@@ -7,9 +7,9 @@
         <title>visclub</title>
      </head>
     <body>
-        @yield('content')
-        
-        include('navbar')
+        @include('navbar')  <!-- Navbar altijd bovenaan -->
+
+        @yield('content')   <!-- Hier komt de pagina-inhoud -->
 
         
          

@@ -1,9 +1,10 @@
+
 @include('navbar')
 
 <div>
         @yield('content')
     </div>
-    
+
 
 <!DOCTYPE html>
 <html>
@@ -14,8 +15,8 @@
 
 <h1>Mensen</h1>
 
-<ul>
-@foreach($people as $person)
+<ul>    
+ @foreach($people as $person)
     <li>
         {{ $person->name }} - {{ $person->email }}
     </li>

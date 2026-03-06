@@ -1,4 +1,3 @@
-
 <?php
 
 namespace App\Http\Controllers;
@@ -13,3 +12,4 @@ class PersonController extends Controller
         return view('people', compact('people'));
     }
 }
+

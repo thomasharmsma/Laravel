@@ -36,4 +36,6 @@ Route::get('/participents', [ParticipentController::class, 'index'])->name('part
 Route::post('/participents', [ParticipentController::class, 'store'])->name('participents.store');
 
 
+use App\Http\Controllers\PersonController;
+Route::get('/people', [PersonController::class, 'index']);
 

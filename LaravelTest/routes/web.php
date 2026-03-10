@@ -32,10 +32,18 @@ Route::get('/navbar', function () {
 
 use App\Http\Controllers\ParticipentController;
 
-Route::get('/participents', [ParticipentController::class, 'index'])->name('participents.index');
-Route::post('/participents', [ParticipentController::class, 'store'])->name('participents.store');
+Route::get('/',action: [Pagecntroller::class, 'index']);
+Route::get('/beheer',action: [Pagecontroller::class, 'admin']);
+Route::get('/deelnemers',action: [Pagecontroller::class, 'participants']);
+
+
+
+
+Route::get('/deelnemers/maak', [ParticipantController::class, 'create']);
+
 
 
 use App\Http\Controllers\PersonController;
 Route::get('/people', [PersonController::class, 'index']);
 
+Route::post(url: '/deelnemers/maak', action: [PersonController::class, 'store']);

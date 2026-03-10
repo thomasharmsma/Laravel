@@ -1,6 +1,14 @@
 
+
+
+
+
+
+
+
+
 body {
-    background-color: #f8f3f3;
+    background-color: #c8d1d4;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -28,8 +36,13 @@ nav.navbar {
     
 }
 nav.navbar li {
+    background-color: #a2b1b8;
     display: inline;
-    margin-right: 20px
+    margin: 15px;
+    padding: 10px 15px;
+    border-radius: 15px;
+      
+                             
     
 }
 

@@ -32,7 +32,7 @@
 
 
   <a href="/user">
-        <button style="padding:15px 30px; font-size:18px;">
+        <button >
             User
         </button>
     </a>
@@ -40,8 +40,8 @@
     <br><br>
 
     <a href="/admin">
-        <button style="padding:15px 30px; font-size:18px;">
-            admin
+        <button >
+            Admin
         </button>
 
 

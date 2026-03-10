@@ -1,13 +1,11 @@
-<?php
-@extends(view : 'layout')
+@extends('layout')
 
-@section(section: 'content')
-
-
-<h1>deze pagina is voor de deelnemers van de visclub</h1>
+@section('content')
 
 <ul>
    @foreach($participants as $participant)
    <li>{{ $participant->name }}</li>
    @endforeach
 </ul>
+
+@endsection

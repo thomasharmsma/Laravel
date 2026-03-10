@@ -4,14 +4,34 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\Participant;
 
 class ParticipantController extends Controller
 {
-    function index(): View 
-    {
-        $participants = Participant::all();
-        return view('participants', compact('participants'));
+    function index(): View {
     }
+
+    function admin(): View{
+    }
+
+{    $participants = Participant::all();
+        return view(view: 'participants', data: compact(var_name:"participants"));
+    } 
+    
+
+    
 }
+
+
+
+function create(): View {
+    return view(view: 'create_participant');
+}
+
+function store(Request $request): void {}
+   $participants = new Participant(attributes: $request); 
+   $requests-save();`
+
+   return redirect(url: '/deelnemers');
+   }
+    
 

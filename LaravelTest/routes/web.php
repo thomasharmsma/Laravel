@@ -46,4 +46,3 @@ Route::get('/deelnemers/maak', [ParticipantController::class, 'create']);
 use App\Http\Controllers\PersonController;
 Route::get('/people', [PersonController::class, 'index']);
 
-Route::post(url: '/deelnemers/maak', action: [PersonController::class, 'store']);

@@ -4,20 +4,16 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\View\View;
 
 class PageController extends Controller
 {
     function index(): View {
+        return view('index');
     }
 
-    function admin(): View{
+    function admin(): View {
+        return view('admin');
     }
 
-    function participants(): View {
-        $participants = Participant::all();
-        return view('participants', ['participants' => $participants]);
-    } 
-    
-
-    
 }

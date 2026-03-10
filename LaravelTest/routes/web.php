@@ -32,7 +32,7 @@ Route::get('/navbar', function () {
 
 use App\Http\Controllers\ParticipentController;
 
-Route::get('/',action: [Pagecntroller::class, 'index']);
+Route::get('/',action: [Pagecontroller::class, 'index']);
 Route::get('/beheer',action: [Pagecontroller::class, 'admin']);
 Route::get('/deelnemers',action: [Pagecontroller::class, 'participants']);
 

@@ -8,30 +8,23 @@ use Illuminate\Http\Request;
 class ParticipantController extends Controller
 {
     function index(): View {
-    }
-
-    function admin(): View{
-    }
-
-{    $participants = Participant::all();
+        $participants = Participant::all();
         return view(view: 'participants', data: compact(var_name:"participants"));
-    } 
-    
+    }
 
-    
+    function admin(): View {
+        $participants = Participant::all();
+        return view(view: 'participants', data: compact(var_name:"participants"));
+    }
+
+    function create(): View {
+        return view(view: 'create_participant');
+    }
 }
 
 
 
-function create(): View {
-    return view(view: 'create_participant');
-}
 
-function store(Request $request): void {}
-   $participants = new Participant(attributes: $request); 
-   $requests-save();`
 
-   return redirect(url: '/deelnemers');
-   }
     
 

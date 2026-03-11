@@ -44,24 +44,6 @@
             Admin
         </button>
 
-
-
-<form action="/Welcome" method="POST">
-    @csrf
-
-    <label>Naam</label>
-    <input type="text" name="naam">
-
-    <label>Email</label>
-    <input type="id" name="name">
-
-    <button type="submit">Opslaan</button>
-</form>
-
-
-
-
-
 </body>
 </a>
 

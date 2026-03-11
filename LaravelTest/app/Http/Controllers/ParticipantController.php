@@ -20,8 +20,17 @@ class ParticipantController extends Controller
     function create(): View {
         return view('create_participant');
     }
-}
 
+    public function store(Request $request)
+    {
+        Participant::create([
+            'id' => $request->name,
+            'name' => $request->email,
+            'date_of_birth' => $request->age
+        ]);
+        return "Participant stored";
+    }
+}
 
 
 

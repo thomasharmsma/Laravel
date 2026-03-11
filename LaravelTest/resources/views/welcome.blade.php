@@ -45,12 +45,18 @@
         </button>
 
 
-<form action="verwerk.php" method="post">
-<input type="text" name="naam" placeholder="YJV" required>
-<textarea name="bericht" placeholder="Hallo" required></textarea>
-<button type="submit">Verstuur</button></form>
 
+<form action="/Welcome" method="POST">
+    @csrf
 
+    <label>Naam</label>
+    <input type="text" name="naam">
+
+    <label>Email</label>
+    <input type="id" name="name">
+
+    <button type="submit">Opslaan</button>
+</form>
 
 
 

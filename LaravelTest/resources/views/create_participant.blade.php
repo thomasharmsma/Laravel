@@ -12,6 +12,6 @@
  <div> 
 
 
-<label for"name">Naam:</label>
+<label for="name">Naam:</label>
 <input type="text" id="name" name="name" required>
 </div>

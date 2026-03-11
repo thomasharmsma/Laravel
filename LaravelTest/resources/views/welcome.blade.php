@@ -44,24 +44,6 @@
             Admin
         </button>
 
-
-
-<form action="/Participant" method="POST">
-    @csrf
-
-    <label>Naam</label>
-    <input type="id" name="naam">
-
-    <label>Email</label>
-    <input type="name" name="name">
-
-    <button type="submit">Opslaan</button>
-</form>
-
-
-
-
-
 </body>
 </a>
 

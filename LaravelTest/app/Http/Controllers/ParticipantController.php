@@ -9,16 +9,16 @@ class ParticipantController extends Controller
 {
     function index(): View {
         $participants = Participant::all();
-        return view(view: 'participants', data: compact(var_name:"participants"));
+        return view('participants', compact("participants"));
     }
 
     function admin(): View {
         $participants = Participant::all();
-        return view(view: 'participants', data: compact(var_name:"participants"));
+        return view('participants', compact("participants"));
     }
 
     function create(): View {
-        return view(view: 'create_participant');
+        return view('create_participant');
     }
 }
 

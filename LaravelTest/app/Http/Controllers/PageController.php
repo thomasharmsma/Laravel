@@ -9,11 +9,11 @@ use Illuminate\View\View;
 class PageController extends Controller
 {
     function index(): View {
-        return view('index');
+        
     }
 
     function admin(): View {
-        return view('admin');
+        
     }
 
 }

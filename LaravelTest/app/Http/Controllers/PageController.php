@@ -2,18 +2,20 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
-use Illuminate\View\View;
+use App\Models\Participant;
+use App\Models\Book;
 
 class PageController extends Controller
 {
-    function index(): View {
-        
+    function index()
+    {
+        $book = Book::first();
+        return view("test", compact("book"));
     }
 
-    function admin(): View {
-        
+    function admin()
+    {
+        return view("admin");
     }
-
 }
+

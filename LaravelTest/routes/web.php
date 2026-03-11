@@ -33,16 +33,16 @@ Route::get('/navbar', function () {
 use App\Http\Controllers\ParticipentController;
 
 Route::get('/',action: [Pagecontroller::class, 'index']);
-Route::get('/beheer',action: [Pagecontroller::class, 'admin']);
-Route::get('/deelnemers',action: [Pagecontroller::class, 'participants']);
+Route::get('/admin',action: [Pagecontroller::class, 'admin']);
+Route::get('/participants',action: [Pagecontroller::class, 'participants']);
 
 
 
 
-Route::get('/deelnemers/maak', [ParticipantController::class, 'create']);
+Route::get('/participants/create', [ParticipantController::class, 'create']);
+Route::post('/participants/store', [StudentController::class, 'store']);
 
 
 
-use App\Http\Controllers\PersonController;
-Route::get('/people', [PersonController::class, 'index']);
+
 

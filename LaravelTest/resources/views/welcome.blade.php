@@ -46,14 +46,14 @@
 
 
 
-<form action="/Welcome" method="POST">
+<form action="/Participant" method="POST">
     @csrf
 
     <label>Naam</label>
-    <input type="text" name="naam">
+    <input type="id" name="naam">
 
     <label>Email</label>
-    <input type="id" name="name">
+    <input type="name" name="name">
 
     <button type="submit">Opslaan</button>
 </form>

@@ -3,22 +3,19 @@
 namespace App\Http\Controllers;
 
 use App\Models\Participant;
-use App\Models\Book;
 
-class PageController extends Controller
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+
+class GebruikerController extends Controller
 {
-    function index()
+    public function store(Request $request)
     {
-        $book = Book::first();
-        return view("test", compact("book"));
-    }
+        DB::table('gebruikers')->insert([
+            'naam' => $request->naam,
+            'email' => $request->email
+        ]);
 
-    function admin()
-    {
-        return view("admin");
+        return "Opgeslagen!";
     }
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> e55f44f7eb43d37d3382d7db1baff1d768dea3d9

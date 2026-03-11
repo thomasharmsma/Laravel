@@ -3,6 +3,19 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -39,10 +52,9 @@ Route::get('/deelnemers',action: [Pagecontroller::class, 'participants']);
 
 
 
-Route::get('/deelnemers/maak', [ParticipantController::class, 'create']);
+Route::get('/Participant', [ParticipantController::class, 'create']);
 
 
 
-use App\Http\Controllers\PersonController;
-Route::get('/people', [PersonController::class, 'index']);
+
 

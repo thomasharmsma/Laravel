@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Participant;
-use App\Models\Book;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -20,6 +19,11 @@ class Pagecontroller extends Controller
     {
         return view("admin");
     }
+<<<<<<< HEAD
     
    
 }
+=======
+}
+?>
+>>>>>>> e52e02e2eb0891edea84fec08770382216cd062d

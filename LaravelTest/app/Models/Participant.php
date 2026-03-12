@@ -1,14 +1,13 @@
 <?php
 
+namespace App\Models;
+
 use Illuminate\Database\Eloquent\Model;
- 
-class Student extends Model
+
+class Participant extends Model
 {
-    protected $table = 'participants';
- 
     protected $fillable = [
-        'id',
         'name',
-        'date_of_birth'
+        'email'
     ];
 }

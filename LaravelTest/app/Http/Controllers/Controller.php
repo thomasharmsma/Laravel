@@ -1,20 +1,12 @@
 <?php
 
+namespace App\Http\Controllers;
 
+use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+use Illuminate\Foundation\Validation\ValidatesRequests;
+use Illuminate\Routing\Controller as BaseController;
 
-
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
-
-class GebruikerController extends Controller
+class Controller extends BaseController
 {
-    public function store(Request $request)
-    {
-        DB::table('gebruikers')->insert([
-            'naam' => $request->naam,
-            'email' => $request->email
-        ]);
-
-        return "Opgeslagen!";
-    }
+    use AuthorizesRequests, ValidatesRequests;
 }

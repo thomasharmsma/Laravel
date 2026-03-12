@@ -7,7 +7,7 @@ use App\Models\Participant;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
-class GebruikerController extends Controller
+class Pagecontroller extends Controller
 {
     public function store(Request $request)
     {

@@ -31,7 +31,7 @@
           <h1>bent u een gebruiker of beheerder</h1>
 
 
-  <a href="/user">
+  <a href="user">
         <button >
             User
         </button>
@@ -39,10 +39,26 @@
 
     <br><br>
 
-    <a href="/admin">
+    <a href="admin">
         <button >
             Admin
         </button>
+
+
+
+<form action="Participant" method="POST">
+    @csrf
+
+    <input type="text" name="naam" placeholder="Naam">
+    <input type="email" name="email" placeholder="Email">
+
+    <button type="submit">Opslaan</button>
+</form>
+
+
+
+
+
 
 </body>
 </a>

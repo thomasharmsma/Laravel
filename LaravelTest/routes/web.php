@@ -2,9 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
-
-
-
+use App\Http\Controllers\ParticipantController;
 
 
 
@@ -43,18 +41,18 @@ Route::get('/navbar', function () {
 })->name('navbar');
 
 
-use App\Http\Controllers\ParticipentController;
 
-Route::get('/',action: [Pagecontroller::class, 'index']);
-Route::get('/beheer',action: [Pagecontroller::class, 'admin']);
-Route::get('/deelnemers',action: [Pagecontroller::class, 'participants']);
+
+Route::get('/beheer', [PageController::class, 'index']);
+Route::get('/beheer', [PageController::class, 'admin']);
+Route::get('/deelnemers', [PageController::class, 'participants']);
 
 
 
 
 Route::get('/Participant', [ParticipantController::class, 'create']);
 
-
+Route::post('/Participant', [ParticipantController::class, 'store']);
 
 
 

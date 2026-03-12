@@ -16,6 +16,12 @@ class ParticipantController extends Controller
 
         return redirect()->back();
     }
+
+        public function index()
+    {
+        $participants = Participant::all();
+        return view('welcome', compact('participants'));
+    }
 }
 
 

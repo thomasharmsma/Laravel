@@ -4,16 +4,6 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\ParticipantController;
 
-
-
-
-
-
-
-
-
-
-
 Route::get('/', function () {
     return view('welcome');
 });
@@ -42,10 +32,9 @@ Route::get('/navbar', function () {
 
 
 
-
-Route::get('/beheer', [PageController::class, 'index']);
-Route::get('/beheer', [PageController::class, 'admin']);
-Route::get('/deelnemers', [PageController::class, 'participants']);
+Route::get('/',action: [Pagecontroller::class, 'index']);
+Route::get('/admin',action: [Pagecontroller::class, 'admin']);
+Route::get('/participants',action: [Pagecontroller::class, 'participants']);
 
 
 
@@ -53,6 +42,7 @@ Route::get('/deelnemers', [PageController::class, 'participants']);
 Route::get('/participants/create', [ParticipantController::class, 'create']);
 Route::post('/participants/store', [StudentController::class, 'store']);
 
+Route::get('/welcome', [ParticipantController::class, 'index']);
 Route::post('/Participant', [ParticipantController::class, 'store']);
 
 

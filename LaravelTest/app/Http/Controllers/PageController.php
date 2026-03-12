@@ -5,19 +5,12 @@ namespace App\Http\Controllers;
 use App\Models\Participant;
 use App\Models\Book;
 
-<<<<<<< HEAD
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
-
-class Pagecontroller extends Controller
-=======
 class PageController extends Controller
->>>>>>> 66e262b42f1d59ab702b64a3fbf74c4a22e3ed8e
 {
-    function index()
+    public function index()
     {
-        $book = Book::first();
-        return view("test", compact("book"));
+        $participants = Participant::all();
+        return view('welcome', compact('participants'));
     }
 
     function admin()

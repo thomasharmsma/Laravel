@@ -56,9 +56,19 @@
     <button type="submit">Opslaan</button>
 </form>
 
+<h2>Geregistreerde deelnemers</h2>
 
-
-
+@if(isset($participants) && $participants->count())
+    @foreach($participants as $participant)
+        <div>
+            <p><strong>name:</strong> {{ $participant->name }}</p>
+            <p><strong>email:</strong> {{ $participant->email }}</p>
+        </div>
+        <hr>
+    @endforeach
+@else
+    <p>Geen deelnemers geregistreerd.</p>
+@endif
 
 
 </body>

@@ -18,6 +18,10 @@ Route::get('/navbar', function () {
     return view('navbar');
 })->name('navbar');
 
+Route::get('/login', function () {
+    return view('login');
+})->name('login');
+
 Route::get('/welcome',action: [PageController::class, 'index']);
 Route::get('/admin',action: [PageController::class, 'admin'])->name('admin');
 Route::get('/participants',action: [PageController::class, 'participants']);

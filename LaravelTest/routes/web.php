@@ -35,7 +35,6 @@ Route::get('/test', function () {
     return view('test');
 })->name('test');
 
-
 Route::get('/navbar', function () {
     return view('navbar');
 })->name('navbar');
@@ -48,12 +47,13 @@ Route::get('/beheer', [PageController::class, 'admin']);
 Route::get('/deelnemers', [PageController::class, 'participants']);
 
 
-
-
 Route::get('/participants/create', [ParticipantController::class, 'create']);
-Route::post('/participants/store', [StudentController::class, 'store']);
-
 Route::post('/Participant', [ParticipantController::class, 'store']);
 
 
+Route::get('/login', function () {
+    return view('login');
+});
+Route::post('/login', [App\Http\Controllers\AuthController::class, 'login']);
 
+Route::get('/login', [AuthController::class, 'index']);

@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Participant;
-use App\Models\Book;
 
 class PageController extends Controller
 {
@@ -18,3 +17,4 @@ class PageController extends Controller
         return view("admin");
     }
 }
+?>

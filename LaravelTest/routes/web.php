@@ -42,10 +42,12 @@ Route::get('/login',action: [PageController::class, 'index'])->name('login');
 Route::get('/admin',action: [PageController::class, 'admin'])->name('admin');
 Route::get('/participants',action: [PageController::class, 'participants']);
 
-Route::get('/participants/create', [ParticipantController::class, 'create']);
+
 Route::get('/welcome', [ParticipantController::class, 'index']);
 Route::post('/participant', [ParticipantController::class, 'store']);
 
+
+Route::get('/participants', [ParticipantController::class, 'index'])->name('participants');
 
 Route::get('/participants/create', [ParticipantController::class, 'create'])->name('participants.create');
 

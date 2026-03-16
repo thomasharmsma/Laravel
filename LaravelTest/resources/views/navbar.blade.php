@@ -4,7 +4,7 @@
         <li class="dropdown">
             <button class="dropbtn">Home</button>
             <div class="dropdown-content">
-                <a href="/welcome">Startpagina</a>
+                <a href="/">Startpagina</a>
                 <a href="/news">Nieuws</a>
             </div>
         </li>

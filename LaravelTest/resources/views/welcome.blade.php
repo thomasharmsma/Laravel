@@ -23,17 +23,25 @@
 </div>
 
 </head>
+
+
+
+
+
+
+
+
     <body>
         <h1>visclub</h1>  
         <p>deze website is voor bezoekers van de visclub </p> 
        <div> 
 
-          <h1>bent u een gebruiker of beheerder</h1>
+         
+    <h1>hallo</h1>
 
-
-  <a href="login">
+  <a href="participants">
         <button >
-            login
+            Deelnemers
         </button>
     </a>
 
@@ -45,7 +53,7 @@
         </button>
     </a>
 
-
+<h1>bent u een gebruiker of beheerder</h1>
 
 
 

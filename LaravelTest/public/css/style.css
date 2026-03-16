@@ -4,12 +4,18 @@
 
 
 
+.content{
+    margin-top: 120px;
+}
 
 
 
 body {
     background-color: #c8d1d4;
     font-family: Arial, sans-serif;
+
+    padding-top:120px;
+   
     margin: 0;
     padding: 0;
 }
@@ -26,9 +32,25 @@ button {
 }
 
 
+nav.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: #6f8fa1;
+    z-index: 1000;
+}
+
+
+
 nav.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-color: #7593a1;
-    padding:20px;
+    padding:10px;
     display: flex;
     list-style: none;
 
@@ -38,12 +60,11 @@ nav.navbar {
 nav.navbar li {
     background-color: #a2b1b8;
     display: inline;
-    margin: 15px;
-    padding: 10px 15px;
+    margin: 0px;
+    padding: 5px 5px;
     border-radius: 15px;
       
-                             
-    
+                            
 }
 
 
@@ -58,5 +79,49 @@ li a {
 
 
 
+
+
+.navbar {
+    background: #333;
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a, .dropbtn {
+    color: white;
+    text-decoration: none;
+    background: none;
+    border: none;
+    font-size: 16px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 150px;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
  
+
+
+
 

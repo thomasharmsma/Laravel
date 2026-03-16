@@ -7,6 +7,11 @@ use App\Models\Participant;
 
 class ParticipantController extends Controller
 {
+    public function create()
+    {
+        return view('create_participant');
+    }
+
     public function store(Request $request)
     {
         Participant::create([
@@ -17,10 +22,10 @@ class ParticipantController extends Controller
         return redirect()->back();
     }
 
-        public function index()
+    public function index()
     {
         $participants = Participant::all();
-        return view('welcome', compact('participants'));
+        return view('participants', compact('participants'));
     }
 }
 

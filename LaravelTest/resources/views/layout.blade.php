@@ -7,11 +7,13 @@
         <title>visclub</title>
      </head>
     <body>
-        @include('navbar')  <!-- Navbar altijd bovenaan -->
+        @include('navbar')  
 
-        @yield('content')   <!-- Hier komt de pagina-inhoud -->
+          
 
-        
+    <div class="content">
+    @yield('content')
+    </div>
          
     </body>
 </html>

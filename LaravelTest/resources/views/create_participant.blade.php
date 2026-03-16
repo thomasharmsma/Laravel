@@ -1,14 +1,14 @@
 @extends('layout')
 
 @section('content')
-@yield('content')
+<h1>Voeg een deelnemer toe</h1>
+<form action="/Participant" method="POST">
+    @csrf
+
+    <input type="text" name="name" placeholder="name">
+    <input type="email" name="email" placeholder="email">
+
+    <button type="submit">Opslaan</button>
+</form>
+
 @endsection
-
-
-<form action="deelnemers/maak" method="post">
-<input type="text" name="naam" placeholder="YJV" required>
-<textarea name="bericht" placeholder="Hallo" required></textarea>
-<button type="submit">Verstuur</button></form>
-<label for="name">Naam:</label>
-<input type="text" id="name" name="name" required>
-</div>

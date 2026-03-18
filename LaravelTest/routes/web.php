@@ -29,11 +29,13 @@ Route::get('/participants', function () {
     return view('participants');
 })->name('participants');
 
+Route::get('/participants', function () {
+    return view('participants');
+})->name('participants');
 
-
-Route::get('/create_participant', function () {
-    return view('create_participant');
-})->name('create_participant');
+Route::get('/edit_participant', function () {
+    return view('edit_participant');
+})->name('edit_participant');
 
 Route::get('/participants',action: [PageController::class, 'index'])->name('participants');
 
@@ -52,3 +54,8 @@ Route::get('/participants', [ParticipantController::class, 'index'])->name('part
 Route::get('/participants/create', [ParticipantController::class, 'create'])->name('participants.create');
 
 Route::post('/participants', [ParticipantController::class, 'store'])->name('participants.store');
+
+
+Route::get('/participants/{id}/edit', [ParticipantController::class, 'edit'])->name('participants.edit');
+Route::put('/participants/{id}/edit', [ParticipantController::class, 'update'])->name('participants.update');
+Route::delete('/participants/{id}/edit', [ParticipantController::class, 'destroy'])->name('participants.destroy');

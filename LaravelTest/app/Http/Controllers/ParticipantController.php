@@ -27,7 +27,24 @@ class ParticipantController extends Controller
         $participants = Participant::all();
         return view('participants', compact('participants'));
     }
+
+    function edit($id)
+    {
+        $participant = Participant::find($id);
+        return view('edit_participant', compact('participant'));
+    }
+    function update($id, Request $request) {
+        $participant= Participant::find($id);
+        $participant->update($request->all());
+        return redirect("/participants");
+    }
+    function destroy($id) {
+        $participant = Participant::find($id);
+        $participant->delete();
+        return redirect("/participants");
+    }
 }
+
 
 
 

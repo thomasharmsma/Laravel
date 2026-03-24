@@ -10,4 +10,5 @@ class Participant extends Model
         'name',
         'email'
     ];
-}
+}  
+?>

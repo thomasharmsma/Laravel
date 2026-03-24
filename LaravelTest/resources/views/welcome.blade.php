@@ -1,9 +1,9 @@
 @include('navbar')
 
-<div>
-    @yield('content')
 
-</div>
+@yield('content')
+
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -13,10 +13,6 @@
         <title>visclub</title>
 
 
-
-
-
-</div>
 
 </head>
 

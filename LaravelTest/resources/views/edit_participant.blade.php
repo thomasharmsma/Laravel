@@ -4,7 +4,7 @@
 
 <h1>bewerk deelnemers</h1>
 
-<form action="/Participant/{{ $participant->id }}" method="POST">
+<form action="/participant/{{ $participant->id }}" method="POST">
     @csrf 
     @method('PUT')  
       <div>

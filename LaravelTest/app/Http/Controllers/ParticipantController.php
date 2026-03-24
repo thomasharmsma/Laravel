@@ -43,6 +43,7 @@ class ParticipantController extends Controller
     }
 
 
+    
 
     function destroy($id) {
         $participant = Participant::find($id);

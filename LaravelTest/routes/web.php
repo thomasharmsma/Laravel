@@ -10,9 +10,10 @@ use App\Http\Controllers\ParticipantController;
 
 
 
-return view('edit_participant');
 
-    
+
+
+
 
 
 Route::get('/', [PageController::class, 'index'])->name('welcome');
@@ -26,6 +27,6 @@ Route::get('/participants/create', [ParticipantController::class, 'create'])->na
 
 
 Route::get('/participants/{id}/edit', [ParticipantController::class, 'edit'])->name('participants.edit');
-Route::put('/participants/{id}', [ParticipantController::class, 'update'])->name('participants.update');
+Route::put('/participant/{id}', [ParticipantController::class, 'update'])->name('participants.update');
 Route::delete('/participants/{id}', [ParticipantController::class, 'destroy'])->name('participants.destroy');
 

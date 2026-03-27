@@ -13,7 +13,13 @@ class ParticipantController extends Controller
     }
 
     public function store(Request $request)
-    {
+    {   
+        $request->validate([
+        'name' => 'required|min;10',
+        'email' => 'required|email',
+          ]);
+
+
         Participant::create([
             'name' => $request->name,
             'email' => $request->email
@@ -43,7 +49,7 @@ class ParticipantController extends Controller
     }
 
 
-    
+
 
     function destroy($id) {
         $participant = Participant::find($id);

@@ -18,10 +18,20 @@
         </li>
 
         <li class="dropdown">
-            <button class="dropbtn">Admin</button>
+            <button class="dropbtn">Vissen</button>
             <div class="dropdown-content">
-                <a href="/admin">Dashboard</a>
-                <a href="/settings">Instellingen</a>
+                <a href="/fish">Vissen bekijken </a>
+                <a href="/add-fish">Vissen toevoegen</a>
+            </div>
+        </li>
+
+
+        <li class="dropdown">
+            <button class="dropbtn">Events</button>
+            <div class="dropdown-content">
+                 <a href="/Wedstrijden">Wedstrijden</a>
+                 <a href="/view-events">Events</a>
+                <a href="/add-events">Events toevoegen </a>
             </div>
         </li>
 

@@ -4,6 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\ParticipantController;
 
+Route::get('/wedstrijden', function () {
+    return view('wedstrijden');
+})->name('wedstrijden');
 
 
 

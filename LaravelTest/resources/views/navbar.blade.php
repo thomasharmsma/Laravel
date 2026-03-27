@@ -29,7 +29,7 @@
         <li class="dropdown">
             <button class="dropbtn">Events</button>
             <div class="dropdown-content">
-                 <a href="/Wedstrijden">Wedstrijden</a>
+                 <a href="/wedstrijden">Wedstrijden</a>
                  <a href="/view-events">Events</a>
                 <a href="/add-events">Events toevoegen </a>
             </div>

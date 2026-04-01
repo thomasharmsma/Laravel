@@ -30,7 +30,7 @@
             <button class="dropbtn">Events</button>
             <div class="dropdown-content">
                  <a href="/wedstrijden">Wedstrijden</a>
-                 <a href="/view-events">Events</a>
+                 <a href="/wedstrijden/create">Events toevoegen</a>
                 <a href="/add-events">Events toevoegen </a>
             </div>
         </li>

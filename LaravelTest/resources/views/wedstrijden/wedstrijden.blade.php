@@ -5,13 +5,13 @@
 
 
 
-<h1>Deelnemers</h1>
+<h1>wedstrijden</h1>
 <ul>
-   @foreach($participants as $participant)
-   <li>{{ $participant->name }} - {{ $participant->email }}</li>
-   <a href="/participants/{{ $participant->id }}">
+   @foreach($wedstrijden as $wedstrijden)
+   <li>{{ $wedstrijden->name }} - {{ $wedstrijden->email }}</li>
+   <a href="/wedstrijden/{{ $wedstrijden->id }}">
 
-      <form action="/participants/{{ $participant->id }}/" method="POST">
+      <form action="/wedstrijden/{{ $wedstrijden->id }}/" method="POST">
          @csrf
          @method('DELETE')
 
@@ -21,7 +21,7 @@
       </form>
     </a>
 
-    <a href ="/participants/{{ $participant->id }}/edit"> 
+    <a href ="/wedstrijden/{{ $wedstrijden->id }}/edit"> 
       
       <button>Edit</button> </a>
    @endforeach

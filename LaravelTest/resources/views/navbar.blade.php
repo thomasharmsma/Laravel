@@ -31,7 +31,6 @@
             <div class="dropdown-content">
                  <a href="/wedstrijden">Wedstrijden</a>
                  <a href="/wedstrijden/create">Events toevoegen</a>
-                <a href="/add-events">Events toevoegen </a>
             </div>
         </li>
 

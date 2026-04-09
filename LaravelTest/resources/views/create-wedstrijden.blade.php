@@ -6,16 +6,19 @@
 @section('content')
 
 <h1>Voeg een wedstrijd toe:</h1>
-<form action="/Wedstrijd" method="POST">
+<form action="/wedstrijden" method="POST">
     @csrf
 <div>
-    <input type="text" name="name" placeholder="name">
+    <input type="text" event="naam" placeholder="naam">
     </div>
     <div>
-    <input type="date" name="date" placeholder="date">
+    <input type="date" date="date" placeholder="date">
     </div>
     <div>
     <input type="location"  name="location" placeholder="location">
+    </div>
+    <div>
+    <input type="deelnemers"  name="deelnemers" placeholder="aantal deelnemers">
     </div>
 
     <button type="submit">Opslaan</button>

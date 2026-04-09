@@ -19,18 +19,12 @@
         </li>
 
         <li class="dropdown">
-            <a href="#" class="nav-link">Vissen</a>
-            <div class="dropdown-content">
-                <a href="/fish">Vissen bekijken</a>
-                <a href="/add-fish">Vissen toevoegen</a>
-            </div>
-        </li>
-
-        <li class="dropdown">
             <a href="#" class="nav-link">Events</a>
             <div class="dropdown-content">
                 <a href="/wedstrijden">Wedstrijden</a>
                 <a href="/wedstrijden/create">Events toevoegen</a>
+                 <a href="/wedstrijden">Wedstrijden</a>
+                 <a href="/wedstrijden/create">Events toevoegen</a>
             </div>
         </li>
 

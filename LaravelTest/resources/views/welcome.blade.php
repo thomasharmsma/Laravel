@@ -1,35 +1,31 @@
+@extends('layout')
 
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+@section('content')
 
-    <title>Visclub</title>
+<div class="content">
+    <div class="form-card">
 
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-</head>
-<body>
+        <h2>Home page</h2>
 
-@include('navbar')
+        <p class="home-text">
+        </p>
 
-<main class="container">
-    <h1 class="title">Visclub</h1>
+        <div class="home-actions">
 
-    <p class="subtitle">
-        Deze website is voor bezoekers van de visclub
-    </p>
+            <form action="/participants" method="POST">
+                @csrf
+                <button type="submit">Participants</button>
+            </form>
 
-    <section class="card">
-        <h2>Bent u een gebruiker of beheerder?</h2>
+            <form action="/wedstrijden" method="POST">
+                @csrf
+                <button type="submit">Events</button>
+            </form>
 
-        <div class="button-group">
-            <a href="/participants" class="btn">Deelnemers</a>
-            <a href="/admin" class="btn btn-secondary">Admin</a>
         </div>
-    </section>
-</main>
 
-</body>
-</html>
+    </div>
+</div>
+
+@endsection
 

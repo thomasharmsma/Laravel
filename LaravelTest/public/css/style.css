@@ -11,12 +11,7 @@ body {
     padding-top: 120px;
 }
 
-.content {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-}
+
 
 .navbar {
     position: fixed;
@@ -64,7 +59,7 @@ button {
     background-color: #7593a1;
     color: white;
     border: none;
-    padding: 12px 24px;
+    padding: 14px 24px;
     border-radius: 10px;
     cursor: pointer;
     font-size: 16px;
@@ -197,7 +192,7 @@ ul button {
 div.content ul {
     
      display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    
     gap: 15px;
      list-style: none;
     padding:0; 
@@ -228,3 +223,21 @@ div.content li{
     background-color:#a2b1b8;
 }
 
+.content {
+    background: white;
+    padding: 40px 80px;
+    width: 70%;
+    margin: 40px auto;
+    border-radius: 15px;
+    max-width: 1000px;
+    margin: 0px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+div.content ul {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 15px;
+}

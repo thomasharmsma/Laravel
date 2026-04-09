@@ -36,6 +36,7 @@
                 placeholder="Locatie"
             >
 
+            
             <label for="deelnemers">Aantal deelnemers</label>
             <input
                 type="number"
@@ -43,6 +44,8 @@
                 name="deelnemers"
                 value="{{ old('deelnemers') }}"
                 placeholder="Aantal deelnemers"
+                min="1"
+                step="1"
             >
 
             <button type="submit">Opslaan</button>

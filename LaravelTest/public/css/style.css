@@ -1,11 +1,4 @@
 
-
-
-
-
-
-
-/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -13,13 +6,11 @@
     font-family: Arial, sans-serif;
 }
 
-/* BODY */
 body {
     background-color: #c8d1d4;
-    padding-top: 120px; /* space for navbar */
+    padding-top: 120px;
 }
 
-/* CONTENT WRAPPER */
 .content {
     max-width: 1000px;
     margin: 0 auto;
@@ -27,8 +18,6 @@ body {
     text-align: center;
 }
 
-
-/* NAVBAR */
 .navbar {
     position: fixed;
     top: 0;
@@ -71,8 +60,6 @@ body {
     background-color: rgba(0,0,0,0.3);
 }
 
-
-/* BUTTONS */
 button {
     background-color: #7593a1;
     color: white;
@@ -89,13 +76,10 @@ button:hover {
     transform: translateY(-2px);
 }
 
-/* BUTTON LIST SPACING */
 ul button {
     margin-bottom: 10px;
 }
 
-
-/* DROPDOWN */
 .dropdown {
     position: relative;
 }
@@ -103,7 +87,6 @@ ul button {
 .dropdown a {
     cursor: pointer;
 }
-
 
 .dropdown-content {
     display: none;
@@ -132,11 +115,70 @@ ul button {
     background-color: #eee;
 }
 
-/* KEEP MENU OPEN */
 .dropdown:hover .dropdown-content,
 .dropdown:focus-within .dropdown-content {
     display: block;
 }
+
+.form-card {
+    background-color: white;
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 24px 28px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    text-align: left;
+}
+
+.form-card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #455a64;
+}
+
+.form-card label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #444;
+}
+
+.form-card input {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    border: 1px solid #b0bec5;
+    font-size: 14px;
+}
+
+.form-card input:focus {
+    outline: none;
+    border-color: #7593a1;
+    box-shadow: 0 0 0 2px rgba(117, 147, 161, 0.25);
+}
+
+.form-card button {
+    width: 100%;
+}
+
+.form-errors {
+    margin-top: 16px;
+    background-color: #fdecea;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    padding: 10px 12px;
+    border-radius: 8px;
+}
+
+.form-errors ul {
+    margin-left: 18px;
+}
+.form-errors li {
+    margin-bottom: 6px;
+}
+
 
 
 

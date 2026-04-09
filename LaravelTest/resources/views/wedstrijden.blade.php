@@ -8,7 +8,7 @@
 <h1>wedstrijden</h1>
 <ul>
    @foreach($wedstrijden as $wedstrijden)
-   <li>{{ $wedstrijden->name }} - {{ $wedstrijden->email }}</li>
+   <li>{{ $wedstrijden->name }} - {{ $wedstrijden->date }} - {{ $wedstrijden->location }} - {{ $wedstrijden->deelnemers }}</li>
    <a href="/wedstrijden/{{ $wedstrijden->id }}">
 
       <form action="/wedstrijden/{{ $wedstrijden->id }}/" method="POST">

@@ -194,7 +194,14 @@ ul button {
 
 
 
-
+div.content ul {
+    list-style: none;
+    padding:0; 
+    margin: 0 auto;
+    max-width: 600px;
+    border-radius:10px ;
+    background-color: white;
+}
 
 
  

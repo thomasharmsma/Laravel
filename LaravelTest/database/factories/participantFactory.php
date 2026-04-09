@@ -18,7 +18,7 @@ class ParticipantFactory extends Factory
     {
         return [
             'name' => $this->faker->name(),
-            'date_of_birth' => $this->faker->date(),
+            'email' => $this->faker->unique()->safeEmail(),
         ];
     }
 }

@@ -9,16 +9,16 @@
 <form action="/wedstrijden" method="POST">
     @csrf
 <div>
-    <input type="text" event="naam" placeholder="naam">
+    <input type="text" name="name" placeholder="naam">
     </div>
     <div>
-    <input type="date" date="date" placeholder="date">
+    <input type="date" name="date" placeholder="date">
     </div>
     <div>
-    <input type="location"  name="location" placeholder="location">
+    <input type="Text"  name="location" placeholder="location">
     </div>
     <div>
-    <input type="deelnemers"  name="deelnemers" placeholder="aantal deelnemers">
+    <input type="number"  name="deelnemers" placeholder="aantal deelnemers">
     </div>
 
     <button type="submit">Opslaan</button>

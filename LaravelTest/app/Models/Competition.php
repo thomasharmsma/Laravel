@@ -9,7 +9,8 @@ class Competition extends Model
     protected $fillable = [
         'name',
         'date',
-        'location'
+        'location',
+        'deelnemers',
     ];
 
     public function participants()

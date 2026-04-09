@@ -24,7 +24,7 @@ public function create()
           ]);
 
 
-        Competition::create([
+        competition::create([
             'name' => $request->name,
             'date' => $request->date,
             'location' => $request->location,

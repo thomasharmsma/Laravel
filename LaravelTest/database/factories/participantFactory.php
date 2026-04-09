@@ -5,9 +5,9 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\participant>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Participant>
  */
-class participantFactory extends Factory
+class ParticipantFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -18,7 +18,7 @@ class participantFactory extends Factory
     {
         return [
             'name' => $this->faker->name(),
-            'email' => $this->faker->email(),
+            'date_of_birth' => $this->faker->date(),
         ];
     }
 }

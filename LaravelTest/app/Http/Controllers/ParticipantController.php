@@ -15,7 +15,7 @@ class ParticipantController extends Controller
     public function store(Request $request)
     {   
         $request->validate([
-        'name' => 'required|min;10',
+        'name' => 'required|min:10',
         'email' => 'required|email',
           ]);
 

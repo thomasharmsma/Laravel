@@ -1,8 +1,9 @@
+
 <nav class="navbar">
-    <ul>
+    <ul class="nav-menu">
 
         <li class="dropdown">
-            <button class="dropbtn">Home</button>
+            <a href="/" class="nav-link">Home</a>
             <div class="dropdown-content">
                 <a href="/">Startpagina</a>
                 <a href="/news">Nieuws</a>
@@ -10,7 +11,7 @@
         </li>
 
         <li class="dropdown">
-            <button class="dropbtn">Gebruiker</button>
+            <a href="#" class="nav-link">Gebruiker</a>
             <div class="dropdown-content">
                 <a href="/participants">Deelnemers</a>
                 <a href="/participants/create">Nieuwe deelnemer</a>
@@ -18,20 +19,18 @@
         </li>
 
         <li class="dropdown">
-            <button class="dropbtn">Vissen</button>
+            <a href="#" class="nav-link">Vissen</a>
             <div class="dropdown-content">
-                <a href="/fish">Vissen bekijken </a>
+                <a href="/fish">Vissen bekijken</a>
                 <a href="/add-fish">Vissen toevoegen</a>
             </div>
         </li>
 
-
         <li class="dropdown">
-            <button class="dropbtn">Events</button>
+            <a href="#" class="nav-link">Events</a>
             <div class="dropdown-content">
-                 <a href="/wedstrijden">Wedstrijden</a>
-                 <a href="/wedstrijden/create">Events toevoegen</a>
-                <a href="/add-events">Events toevoegen </a>
+                <a href="/wedstrijden">Wedstrijden</a>
+                <a href="/wedstrijden/create">Events toevoegen</a>
             </div>
         </li>
 

@@ -7,8 +7,8 @@ use App\Models\Competition;
 use Illuminate\Http\Request;
 
 class MatchController extends Controller 
+{ 
 
-{
 public function create()
     {
         return view('create-wedstrijden');
@@ -20,13 +20,15 @@ public function create()
         'name' => 'required|min:10',
         'date' => 'required|date',
         'location' => 'required|string',
+        'deelnemers' => 'required|integer|min:0'
           ]);
 
 
         Competition::create([
             'name' => $request->name,
             'date' => $request->date,
-            'location' => $request->location
+            'location' => $request->location,
+            'deelnemers' => $request->deelnemers
         ]);
 
         return redirect()->back();

@@ -1,7 +1,3 @@
-Hier is een professionelere versie van je README, geschikt voor een GitHub-project. Ik heb de beschrijving duidelijker gemaakt en de taakverdeling netter geformuleerd.
-
-Writing
-
 # Viswedstrijd Management Systeem
 
 ## Over het project
